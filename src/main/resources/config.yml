@@ -1,0 +1,38 @@
+#
+# Tradeconomy v${version} by byteful#0001
+#
+
+# +============================+
+# |                            |
+# |  Data Management Settings  |
+# |                            |
+# +============================+
+
+# Settings for the data handler.
+# The data handler will be the method used to store trade offers and player data.
+#
+#   +  Remote databases (these require extra configuration to setup)
+#    => MySQL
+#    => MongoDB
+#
+#   +  Flat-file databases
+#    => SQLite
+#
+#   +  Human-readable file formats
+#    => YML
+#    => JSON
+#
+# By default, SQLite is used.
+data:
+  # The data storage method from the list above.
+  method: "SQLite"
+  # Extra configuration for remote databases.
+  remote:
+    # The URI for MySQL connection. This will only be used if 'mysql' is set as the method.
+    mysql_uri: "mysql://user:pass@host:port/database?useSSL=false"
+    # Connection settings for MongoDB. These will only be used if 'mongodb' is set as the method.
+    mongo:
+      # The URI for MongoDB connection.
+      uri: "mongodb://username:password@host:port/"
+      # The database for Tradeconomy in MongoDB.
+      database: "Tradeconomy"

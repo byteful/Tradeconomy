@@ -1,0 +1,5 @@
+name: 'Tradeconomy'
+version: '${version}'
+main: 'me.byteful.plugin.tradeconomy.TradeconomyPlugin'
+author: 'byteful'
+description: 'A plugin that adds a trade-based player economy to your Minecraft server.'
